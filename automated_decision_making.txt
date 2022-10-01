@@ -1,0 +1,20 @@
+#Automated decision making
+
+from random import choice
+
+#Creating a list (array) of movies
+
+movies = ['Harry Potter', 'Fast and Furious', 'The Hangover', 'Transformers']
+shows = ['Trailer Park Boys', 'Brooklyn 99', 'The Office', 'Friends']
+
+#Randomly choose a movie or a show from the list
+
+a = input('Do you wanna watch a movie (1) or a tv show (2)?- ')
+b = int(a)
+
+if b == 1:
+    print(choice(movies))
+elif b == 2:
+    print(choice(shows))
+else:
+    print('Invalid value')
